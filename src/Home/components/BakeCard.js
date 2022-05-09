@@ -18,7 +18,8 @@ import { useEffect, useState } from "react";
 import { config } from "../../config";
 
 const CardWrapper = styled(Card)({
-  background: "rgb(251 241 225)",
+  background: "#193d7d",
+  color:"#ffffff",
   marginBottom: 24,
 });
 
@@ -184,7 +185,7 @@ export default function BakeCard() {
           mt={3}
         >
           <Typography variant="body1">Contract</Typography>
-          <Typography variant="h5">{contractBNB} BNB</Typography>
+          <Typography variant="h5">{contractBNB} PSTN</Typography>
         </Grid>
         <Grid
           container
@@ -193,7 +194,7 @@ export default function BakeCard() {
           mt={3}
         >
           <Typography variant="body1">Wallet</Typography>
-          <Typography variant="h5">{walletBalance.bnb} BNB</Typography>
+          <Typography variant="h5">{walletBalance.bnb} PSTN</Typography>
         </Grid>
         <Grid
           container
@@ -201,8 +202,8 @@ export default function BakeCard() {
           alignItems="center"
           mt={3}
         >
-          <Typography variant="body1">Your Beans</Typography>
-          <Typography variant="h5">{walletBalance.beans} BEANS</Typography>
+          <Typography variant="body1">Your GAS</Typography>
+          <Typography variant="h5">{walletBalance.beans} GAS</Typography>
         </Grid>
         <Box paddingTop={4} paddingBottom={3}>
           <Box>
@@ -219,7 +220,17 @@ export default function BakeCard() {
               disabled={wrongNetwork || !address || +bakeBNB === 0 || loading}
               onClick={bake}
             >
-              BAKE BEANS
+              APPROVE
+            </Button>
+          </Box>
+          <Box marginTop={3} marginBottom={3}>
+            <Button
+              variant="contained"
+              fullWidth
+              disabled={wrongNetwork || !address || +bakeBNB === 0 || loading}
+              onClick={bake}
+            >
+              BUY GAS
             </Button>
           </Box>
           <Divider />
@@ -233,30 +244,28 @@ export default function BakeCard() {
               Your Rewards
             </Typography>
             <Typography variant="h5" fontWeight="bolder">
-              {walletBalance.rewards} BNB
+              {walletBalance.rewards} PSTN
             </Typography>
           </Grid>
           <ButtonContainer container>
             <Grid item flexGrow={1} marginRight={1} marginTop={3}>
               <Button
                 variant="contained"
-                color="secondary"
                 fullWidth
                 disabled={wrongNetwork || !address || loading}
                 onClick={reBake}
               >
-                RE-BAKE
+                RE-FUEL
               </Button>
             </Grid>
             <Grid item flexGrow={1} marginLeft={1} marginTop={3}>
               <Button
                 variant="contained"
-                color="secondary"
                 fullWidth
                 disabled={wrongNetwork || !address || loading}
                 onClick={eatBeans}
               >
-                EAT BEANS
+                COLLECT
               </Button>
             </Grid>
           </ButtonContainer>

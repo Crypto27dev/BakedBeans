@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 
 const CardWrapper = styled(Card)({
-  background: "rgb(251 241 225)",
+  background: "#193d7d",
 });
 
 const Input = styled("input")(({ theme }) => ({
@@ -36,8 +36,7 @@ export default function ReferralLink({ address }) {
           marginTop={2}
           paddingX={3}
         >
-          Earn 12% of the BNB used to bake beans from anyone who uses your
-          referral link
+          Earn 6% of the PSTN from anyone who uses your referral link
         </Typography>
       </CardContent>
     </CardWrapper>

@@ -29,7 +29,6 @@ export default function Connect({ responsive = true }) {
 
   return responsive ? (
     <ConnectButton
-      color="secondary"
       variant="contained"
       disabled={loading}
       onClick={() => (address ? disconnect() : connect())}
@@ -38,7 +37,6 @@ export default function Connect({ responsive = true }) {
     </ConnectButton>
   ) : (
     <SmallScreenConnectButton
-      color="secondary"
       variant="contained"
       disabled={loading}
       onClick={() => (address ? disconnect() : connect())}

@@ -1,9 +1,8 @@
 import Grid from "@mui/material/Grid";
 
 import { config } from "../../config";
-import esIcon from "../assets/ESIcon.png";
-import tgIcon from "../assets/TGIcon.png";
-import twIcon from "../assets/TWIcon.png";
+import esIcon from "../assets/bscscan.png";
+import tgIcon from "../assets/Telegram.png";
 
 export default function Footer() {
   return (
@@ -16,11 +15,6 @@ export default function Footer() {
       <Grid item>
         <a href="https://t.me/BakedBeansMiner" target="__blank">
           <img src={tgIcon} alt="" width={48} height={48} />
-        </a>
-      </Grid>
-      <Grid item>
-        <a href="https://twitter.com/BakedBeansMiner" target="__blank">
-          <img src={twIcon} alt="" width={48} height={48} />
         </a>
       </Grid>
     </Grid>

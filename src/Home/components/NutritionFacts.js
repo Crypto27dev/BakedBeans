@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 
 const CardWrapper = styled(Card)({
-  background: "rgb(255 252 248)",
+  background: "#193d7d",
   marginBottom: 24,
 });
 
@@ -21,8 +21,8 @@ const nutritionFacts = [
     value: "2,920",
   },
   {
-    label: "Dev Fee",
-    value: 3,
+    label: "Fee",
+    value: 5,
   },
 ];
 
@@ -31,7 +31,7 @@ export default function NutritionFacts() {
     <CardWrapper>
       <CardContent>
         <Typography variant="h5" borderBottom="6px solid" paddingBottom={1}>
-          Nutrition Facts
+          PSTN Statistics
         </Typography>
         <Box paddingTop={2}>
           {nutritionFacts.map((f) => (

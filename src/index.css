@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(circle at top right,rgba(23,33,94,.9) 0,#f2b04f 25%);
+  background: radial-gradient(circle at top right,rgba(23,33,94,.9) 0,#3d9bc9);
 }
 
 code {

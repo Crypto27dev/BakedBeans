@@ -2,6 +2,8 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 import logo from "../../assets/FullLogo.png";
 import Connect from "./Connect";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 
 const Wrapper = styled("div")(({ theme }) => ({
   textAlign: "center",
@@ -17,11 +19,17 @@ const Wrapper = styled("div")(({ theme }) => ({
 export default function Header() {
   return (
     <Wrapper>
-      <img src={logo} alt="" width={"100%"} style={{ marginTop: -48 }} />
+      <img src={logo} alt="" width={"100%"} style={{ marginTop: "50px", marginBottom: "20px" }} />
       <Connect responsive={false} />
-      <Typography variant="h6" marginTop={-3}>
-        The BNB Reward Pool with the tastiest daily return and lowest dev fee
-      </Typography>
+      <Box marginTop={3} marginBottom={3}>
+        <Button
+          variant="contained"
+          fullWidth
+          style={{backgroundColor: "#e83446"}}
+        >
+          BUY SPIN
+        </Button>
+      </Box>
     </Wrapper>
   );
 }
