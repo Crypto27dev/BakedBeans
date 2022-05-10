@@ -32,12 +32,12 @@ export default function PriceInput({ value, max, onChange = () => {} }) {
       <Typography
         fontSize={24}
         position="absolute"
-        top={9}
+        top={12}
         right={18}
         fontWeight={500}
         color="black"
       >
-        BNB
+        PSTN
       </Typography>
     </Box>
   );
