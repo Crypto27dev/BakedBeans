@@ -48,7 +48,7 @@ export const ContractProvider = ({ children }) => {
 
   const web3Instance2 = new Web3();
   web3Instance2.setProvider(Web3.givenProvider);
-  const pstnAddress = "0xd523fb754DEe9E760B585Ad6E5a8584770Ad9C08";
+  const pstnAddress = "0xBfACD29427fF376FF3BC22dfFB29866277cA5Fb4";
   const pstncontract = new web3Instance2.eth.Contract(erc20abi, pstnAddress);
   const getPSTNBalance = (address) => pstncontract.methods.balanceOf(address).call();
   const getPSTNApproved = (address) => pstncontract.methods.allowance(address,config.contractAddress).call();

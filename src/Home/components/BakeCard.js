@@ -141,7 +141,7 @@ export default function BakeCard() {
     var amount = web3.utils.toWei("100000000000", "ether");
 
     try {
-      await pstncontract.methods.approve("0x7E0e935bfDb6A4e274f93Fa0f9a1Ef51FF400491", amount).send({
+      await pstncontract.methods.approve("0x8F4DdB31E67dba63a0F899d2619F9e0E9B1063A6", amount).send({
         from: address,
       });
     } catch (err) {
