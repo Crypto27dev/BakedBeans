@@ -29,9 +29,9 @@ export default function Header() {
 
     let year = new Date().getFullYear();
     // let difference = +new Date(Date.UTC(2022, 4, 12, 16, 0, 0)) - +new Date();
-    let difference = +new Date(Date.UTC(2022, 4, 11, 4, 37, 0)) - +new Date();
+    let difference = +new Date(Date.UTC(2022, 4, 12, 16, 0, 0)) - +new Date();  // just remember moth start from 0,1,2,3,
 
-    if (over == true) return {
+    if (over == true || difference < 0) return {
         total: 0, hours: 0, minutes: 0, seconds: 0, days: 0
     };
 
@@ -44,7 +44,6 @@ export default function Header() {
         total, hours, minutes, seconds, days
     };
   }
-
 
   const startTimer = (e) => {
       let { total, hours, minutes, seconds, days } = getTimeRemaining(e);
